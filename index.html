@@ -94,75 +94,84 @@
 
         <div class="filter-bar" aria-label="Project filters">
           <button class="filter-button is-active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="ops">Ops</button>
+          <button class="filter-button" type="button" data-filter="security">Security</button>
           <button class="filter-button" type="button" data-filter="ai">AI</button>
-          <button class="filter-button" type="button" data-filter="blockchain">Blockchain</button>
-          <button class="filter-button" type="button" data-filter="react">React</button>
-          <button class="filter-button" type="button" data-filter="frontend">Frontend</button>
+          <button class="filter-button" type="button" data-filter="finance">Finance</button>
+          <button class="filter-button" type="button" data-filter="backend">Backend</button>
         </div>
 
         <div class="project-grid" data-project-grid>
-          <article class="project-card" data-category="ai backend">
+          <article class="project-card" data-category="ops ai backend">
             <div class="project-number">01</div>
-            <p class="project-type">AI Research Agent</p>
-            <h3>Ollama Research Agent</h3>
+            <p class="project-type">CloudOps / AI Triage</p>
+            <h3>CloudOps Copilot</h3>
             <p>
-              Privacy-focused autonomous research assistant using locally hosted Ollama models, LangGraph Studio,
-              Tavily/Perplexity search, iterative gap detection, and markdown summaries with sources.
-            </p>
-            <div class="project-tags" aria-label="Tech stack">
-              <span>Python</span>
-              <span>LangGraph</span>
-              <span>Ollama</span>
-            </div>
-            <a href="https://github.com/DivijJaswal/Ollama-Resarch-Agent" target="_blank" rel="noreferrer">View source</a>
-          </article>
-
-          <article class="project-card" data-category="blockchain frontend">
-            <div class="project-number">02</div>
-            <p class="project-type">Blockchain App</p>
-            <h3>Decentralized Voting</h3>
-            <p>
-              Ethereum-based voting system with admin election setup, voter registration and approval, smart contract
-              deployment, MetaMask flow, and results display.
-            </p>
-            <div class="project-tags" aria-label="Tech stack">
-              <span>JavaScript</span>
-              <span>Truffle</span>
-              <span>Ethereum</span>
-            </div>
-            <a href="https://github.com/DivijJaswal/dVoting" target="_blank" rel="noreferrer">View source</a>
-          </article>
-
-          <article class="project-card" data-category="react frontend">
-            <div class="project-number">03</div>
-            <p class="project-type">React App</p>
-            <h3>Keeper App</h3>
-            <p>
-              Componentized note-keeping app using React state, create/delete note flows, and Material UI components for
-              a compact frontend interaction model.
+              Production-style incident triage platform with runtime log intake, runbooks, async triage jobs,
+              LangGraph RAG over past incidents, audit timelines, metrics, and local LLM support.
             </p>
             <div class="project-tags" aria-label="Tech stack">
               <span>React</span>
-              <span>Material UI</span>
-              <span>JavaScript</span>
+              <span>Node.js</span>
+              <span>Python</span>
+              <span>LangGraph</span>
+              <span>PostgreSQL</span>
             </div>
-            <a href="https://github.com/DivijJaswal/Keeper-App" target="_blank" rel="noreferrer">View source</a>
+            <a href="https://github.com/DivijJaswal/cloudops-copilot" target="_blank" rel="noreferrer">View source</a>
           </article>
 
-          <article class="project-card" data-category="frontend">
-            <div class="project-number">04</div>
-            <p class="project-type">Static Frontend</p>
-            <h3>E-Commerce Website</h3>
+          <article class="project-card" data-category="security backend">
+            <div class="project-number">02</div>
+            <p class="project-type">Security Automation</p>
+            <h3>CVE Triage Bot</h3>
             <p>
-              Static storefront concept for The Dude Store, with product navigation, search UI, Bootstrap layout,
-              product cards, and custom visual assets.
+              Local-first vulnerability triage dashboard for GitHub repositories with dependency parsing, CVE and OSV
+              matching, risk scoring, source reachability, policy gates, SBOM export, and SARIF reporting.
             </p>
             <div class="project-tags" aria-label="Tech stack">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>Bootstrap</span>
+              <span>Node.js</span>
+              <span>OSV</span>
+              <span>SBOM</span>
+              <span>SARIF</span>
+              <span>Docker</span>
             </div>
-            <a href="https://github.com/DivijJaswal/E-Commerce-Website" target="_blank" rel="noreferrer">View source</a>
+            <a href="https://github.com/DivijJaswal/cve-triage-bot" target="_blank" rel="noreferrer">View source</a>
+          </article>
+
+          <article class="project-card" data-category="ai backend">
+            <div class="project-number">03</div>
+            <p class="project-type">AI Evaluation</p>
+            <h3>LLM Evaluation Harness</h3>
+            <p>
+              Model-quality workbench with dataset suites, prompt versioning, weighted assertions, judge rubrics,
+              provider health checks, CI quality gates, run history, and leaderboard analytics.
+            </p>
+            <div class="project-tags" aria-label="Tech stack">
+              <span>Node.js</span>
+              <span>LLM Eval</span>
+              <span>Ollama</span>
+              <span>CI Gates</span>
+              <span>Docker</span>
+            </div>
+            <a href="https://github.com/DivijJaswal/llm-evaluation-harness" target="_blank" rel="noreferrer">View source</a>
+          </article>
+
+          <article class="project-card" data-category="finance ai backend">
+            <div class="project-number">04</div>
+            <p class="project-type">Finance Intelligence</p>
+            <h3>Personal Finance Expense Intelligence</h3>
+            <p>
+              Local-first expense intelligence app with CSV imports, category rules, recurring bill confidence,
+              cash-flow risk alerts, anomaly explanations, scenario planning, saved views, and audit trails.
+            </p>
+            <div class="project-tags" aria-label="Tech stack">
+              <span>Node.js</span>
+              <span>SQLite</span>
+              <span>ML</span>
+              <span>Analytics</span>
+              <span>Playwright</span>
+            </div>
+            <a href="https://github.com/DivijJaswal/personal-finance-expense-intelligence" target="_blank" rel="noreferrer">View source</a>
           </article>
         </div>
       </section>
